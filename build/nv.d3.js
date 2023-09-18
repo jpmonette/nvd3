@@ -3548,7 +3548,7 @@ nv.models.cumulativeLineChart = function() {
             if (!showLegend) {
                 g.select('.nv-legendWrap').selectAll('*').remove();
             } else {
-                legend.width(availableWidth);
+                legend.width(availableWidth - 140);
 
                 g.select('.nv-legendWrap')
                     .datum(data)
@@ -3560,7 +3560,7 @@ nv.models.cumulativeLineChart = function() {
                 }
 
                 g.select('.nv-legendWrap')
-                    .attr('transform', 'translate(0,' + (-margin.top) +')')
+                    .attr('transform', 'translate(140,' + (-margin.top) +')')
             }
 
             // Controls
